@@ -31,15 +31,19 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
 	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-validation")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 
 	//Databases
 	runtimeOnly("org.postgresql:postgresql")
 
 	//Utils
+	implementation("org.mapstruct:mapstruct:1.6.3")
+	implementation("com.fasterxml.jackson.core:jackson-databind")
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	annotationProcessor("org.projectlombok:lombok")
+	annotationProcessor("org.mapstruct:mapstruct-processor:1.6.3")
 
 	//Test
 	testImplementation("org.springframework.boot:spring-boot-starter-test")

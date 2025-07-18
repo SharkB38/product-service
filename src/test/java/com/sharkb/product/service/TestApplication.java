@@ -1,5 +1,6 @@
 package com.sharkb.product.service;
 
+import com.sharkb.product.Application;
 import org.springframework.boot.SpringApplication;
 
 public class TestApplication {
